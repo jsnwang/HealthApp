@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/tv_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_the_areas"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_improve"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:text="@string/you_want_to_work_on_to_improve_your_health"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_choose" />
+
+    <ImageView
+        android:id="@+id/border1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@id/border2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_improve" />
+
+    <ImageView
+        android:id="@+id/border2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@id/border3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/border1" />
+
+    <ImageView
+        android:id="@+id/iv_micro"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@id/border2"
+        app:layout_constraintStart_toStartOf="@id/border2"
+        app:layout_constraintTop_toTopOf="@id/border2" />
+
+    <ImageView
+        android:id="@+id/border3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@id/border4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/border2" />
+
+    <ImageView
+        android:id="@+id/iv_meditate"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@id/border3"
+        app:layout_constraintStart_toStartOf="@id/border3"
+        app:layout_constraintTop_toTopOf="@id/border3" />
+
+    <ImageView
+        android:id="@+id/border4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@id/btn_create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/border3" />
+
+    <ImageView
+        android:id="@+id/iv_pain"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@id/border4"
+        app:layout_constraintStart_toStartOf="@id/border4"
+        app:layout_constraintTop_toTopOf="@id/border4" />
+
+    <ImageView
+        android:id="@+id/iv_circadian"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@id/border1"
+        app:layout_constraintStart_toStartOf="@id/border1"
+        app:layout_constraintTop_toTopOf="@id/border1" />
+
+    <TextView
+        android:id="@+id/tv_circadian"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:text="@string/improve_circadian_rhythms"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/tv_circadian2"
+        app:layout_constraintStart_toEndOf="@id/iv_circadian"
+        app:layout_constraintStart_toStartOf="@+id/tv_circadian2"
+        app:layout_constraintTop_toTopOf="@id/border1" />
+
+    <TextView
+        android:id="@+id/tv_circadian2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sleep_hygiene_and_much_more"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintBottom_toBottomOf="@id/border1"
+        app:layout_constraintStart_toEndOf="@id/iv_circadian"
+        app:layout_constraintStart_toStartOf="@+id/tv_micro"
+        app:layout_constraintTop_toBottomOf="@id/tv_circadian" />
+
+    <TextView
+        android:id="@+id/tv_micro2"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:text="@string/your_health_from_a_holistic_perspective"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintBottom_toBottomOf="@id/border2"
+        app:layout_constraintStart_toEndOf="@id/iv_micro"
+        app:layout_constraintStart_toStartOf="@+id/tv_meditate"
+        app:layout_constraintTop_toBottomOf="@id/tv_micro" />
+
+    <TextView
+        android:id="@+id/tv_meditate"
+        android:layout_width="279dp"
+        android:layout_height="60dp"
+        android:text="Meditations for your mental health"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/tv_meditate2"
+        app:layout_constraintStart_toEndOf="@id/iv_meditate"
+        app:layout_constraintStart_toStartOf="@+id/tv_meditate2"
+        app:layout_constraintTop_toTopOf="@id/border3" />
+
+    <TextView
+        android:id="@+id/tv_meditate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More than 200 meditations"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintBottom_toBottomOf="@id/border3"
+        app:layout_constraintStart_toEndOf="@id/iv_meditate"
+        app:layout_constraintStart_toStartOf="@+id/tv_pain"
+        app:layout_constraintTop_toBottomOf="@id/tv_meditate" />
+
+    <TextView
+        android:id="@+id/tv_pain"
+        android:layout_width="260dp"
+        android:layout_height="56dp"
+        android:text="Avoid pain by working the muscles"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/tv_pain2"
+        app:layout_constraintStart_toEndOf="@id/iv_pain"
+        app:layout_constraintStart_toStartOf="@+id/tv_pain2"
+        app:layout_constraintTop_toTopOf="@id/border4" />
+
+    <TextView
+        android:id="@+id/tv_pain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More than 150 exercises"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintBottom_toBottomOf="@id/border4"
+        app:layout_constraintEnd_toEndOf="@id/border4"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toEndOf="@id/iv_pain"
+        app:layout_constraintTop_toBottomOf="@id/tv_pain" />
+
+    <TextView
+        android:id="@+id/tv_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/improve_your_microbiota"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@id/tv_micro2"
+        app:layout_constraintStart_toEndOf="@id/iv_micro"
+        app:layout_constraintStart_toStartOf="@+id/tv_micro2"
+        app:layout_constraintTop_toTopOf="@id/border2" />
+
+
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/create_your_health_plan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

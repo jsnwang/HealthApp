@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HealthApp</string>
+    <string name="image">image</string>
+    <string name="do_you_want_to_get_active_in_a_healthy_way">Do you want to get active in a healthy way?</string>
+    <string name="we_can_help_you_achieve_it">We can help you achieve it!</string>
+    <string name="get_started">Get started</string>
+    <string name="choose_the_areas">Choose the areas</string>
+    <string name="you_want_to_work_on_to_improve_your_health">you want to work on to improve your health</string>
+    <string name="improve_circadian_rhythms">Improve circadian rhythms</string>
+    <string name="sleep_hygiene_and_much_more">Sleep hygiene and much more</string>
+    <string name="improve_your_microbiota">Improve your microbiota</string>
+    <string name="your_health_from_a_holistic_perspective">Your health from a holistic perspective</string>
+    <string name="create_your_health_plan">Create your health plan</string>
+    <string name="_10">10%</string>
+    <string name="complete_the_form_to_obtain_a_personalized_plan_from_our_medical_professionals">Complete the form to obtain a personalized plan from our medical professionals</string>
+    <string name="personalized_attention">Personalized attention</string>
+    <string name="i_usually_sleep">I usually sleep:</string>
+    <string name="_6_hours"><![CDATA[< 6 hours]]></string>
+    <string name="_7_8_hours">7 - 8 hours</string>
+    <string name="_9_hours"><![CDATA[> 9 hours]]></string>
+    <string name="_continue">Continue</string>
+</resources>
